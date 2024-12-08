@@ -1,0 +1,284 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #ffffff; /* Adjust to match your site's color */
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #ff0606; /* Adjust to match your site's color */
+    font-size: 1em; /* Adjust size as needed */
+    font-weight: bold; /* Makes the text bold */
+  }
+  .search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.search-form button {
+    background-color: #fa1212;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}  
+
+/* Video section styles */
+.video-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensures the video section spans the full width of its container */
+    height: 500px; /* Sets the fixed height of the video section */
+}
+
+#background-video {
+    width: 100%; /* Makes the video fill the entire width of its container */
+    height: 100%; /* Makes the video fill the entire height of its container */
+    object-fit: cover; /* Ensures the video maintains aspect ratio and covers the entire area */
+}  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+  }
+  /* Two-column section styles */
+.two-column-section {
+    display: flex;
+    padding: 2em;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 1em;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .featured-vehicles {
+    background-color: #ff1818;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-vehicles h2 {
+    margin-bottom: 20px;
+}
+
+.vehicle-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vehicle-item {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.vehicle-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.vehicle-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.vehicle-item p {
+    margin: 5px 0;
+}
+
+.vehicle-item p:last-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Vehicle Search */
+.search-bar {
+    background-color: #fffefe;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+select, .filters-btn, .search-btn {
+    padding: 20px 28px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.filters-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-btn {
+    background-color: #fa1010;
+    color: #fff;
+    border: none;
+}
+
+.search-btn:hover {
+    background-color: #fa1010;
+}
+
+.filters-btn:hover, select:hover {
+    border-color: #fa1010;
+}
+
+.brands-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 50% / 10%;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brands-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brands-container h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.brands-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.brands-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+}
+
+/* About image and text */
+.video-section {
+    position: relative;
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('aboutsection.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.video-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white; /* Adjust text color for visibility */
+    padding: 20px;
+}
+
+.video-overlay h1, .video-overlay p {
+    margin: 10px 0;
+}
+
+.infographic-section {
+    margin-bottom: 30px;
+}
+
+.infographic-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.infographic-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.timeline {
+    /* Styles for timeline or milestone graphics */
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust based on number of team members */
+    gap: 20px;
+}
+
+.testimonial-quotes {
+    /* Styles for testimonial quote boxes */
+}
